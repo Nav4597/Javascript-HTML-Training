@@ -1,0 +1,48 @@
+
+
+.head{
+    text-align: center;
+    color: darksalmon;
+    font-size: 2em;
+}
+
+.para{
+    border: black dashed 2px;
+    font-size: 1.5em;
+    color:rgb(60, 143, 163);
+    font-family: cursive;
+}
+
+#para2{
+    border: rgb(8, 10, 9) dashed 2px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(105, 164, 179)
+}
+
+#h2{
+    color: darksalmon;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+img{
+    display:block;
+    float:left;
+    margin-top: 45px;
+}
+#p3{
+   color: rgb(43, 88, 129);
+   font-size: 20px;
+}
+
+#para1{
+     color: darkslategrey;
+     font-size: 20px;
+    margin: 70px 100px 70px 80px;
+}
+
+#i1{
+    display: inline;
+}
