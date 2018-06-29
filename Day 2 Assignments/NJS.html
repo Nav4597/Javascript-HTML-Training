@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>NJS</title>
+    </head>
+    <body>
+      
+        <script>
+              "use strict"
+            let player1 = {
+                name: "Virat",
+                rank: 1
+            };
+            let player2 = {
+                name: "Dhoni",
+                rank: 2,
+                lastname: "MS"
+            };
+            if(Object.keys(player1).length !== Object.keys(player2).length)
+            {
+                document.write("Length does not match");
+            }
+            else{
+                document.write("Length match");
+            }
+            console.log(player1);
+            console.log(player2);
+        </script>
+    </body>
+</html>
