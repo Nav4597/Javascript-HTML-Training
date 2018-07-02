@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Functionsum</title>
+</head>
+<body>
+    <p>Total Sum</p>
+    <p id="total"></p>
+    <script>
+        function sum(...arr){
+            let sumArr = 0;
+            for(let i=0; i<arr.length; i++)
+            {
+                sumArr += arr[i];
+            }
+            return sumArr;
+        }
+        document.getElementById("total").innerHTML = sum(1,2,3,4,5,25,62);
+        </script>
+</body>
+</html>
