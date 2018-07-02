@@ -1,0 +1,65 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <style>
+#loader{
+    background-color: red;
+    width: 20px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    position: center;
+    height: 30px;
+    position: absolute;     
+}
+
+#panel{
+    border: chocolate 1px double;
+    width: 50%;
+    height: 30px;
+    position: absolute;
+}
+
+#percent{
+    position: absolute;
+    color: blue;
+}
+#startButton{
+    bottom: 10px;
+    position: absolute;;
+    left: 20px;
+    position: absolute;
+
+}
+
+</style>
+</head>
+<script>
+function startFromLeft()
+{
+    let loading = document.getElementById("loader");
+    let width = 1;
+    let interval = setInterval(frame,50);
+    function frame() {
+        if(width >=100) {
+            clearInterval(interval);
+        }
+        else {
+            width++;
+            loading.style.width = width + '%';
+            document.getElementById("percent").innerHTML=width;
+        }
+    }
+
+}
+</script>
+<body> 
+       
+<div id="panel">
+        <div id="loader">
+</div>
+</div>
+<div id="percent"></div>
+<button id="startButton" onclick="startFromLeft()">Click Here to Load!!</button>
+</body>
+</html>
